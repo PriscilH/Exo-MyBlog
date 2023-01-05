@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TITLE */
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+
 }
 
-.App-link {
-  color: #61dafb;
+h1, h3, .item .subtitle {
+margin-bottom: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HEADER */
+
+.header {
+    height: 160px;
+    background-color: white;
+}
+
+.header span {
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* NAVIGATION */
+
+.navigation-menu {
+    background-color: #333333; 
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navigation-link  {
+    display: flex;
+    margin-left: 20px;
+    flex: 1; 
+}
+
+.link {
+    margin-right: 20px;
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+}
+
+.MainContent {
+    width: 950px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    /* border: red solid 1px; */
+}
+
+.SideContent {
+    margin : 20px 0 20px 20px;
+    width: 300px;
+    height: 346px;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.item {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    background-color: #c4c4c4;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddd;
+    width: 1280px;
+    height: 63px;
+    margin-left: 80px;
+    margin-top: 59px;
+}
+
+.footer > div {
+    width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: bold;
+    
 }
